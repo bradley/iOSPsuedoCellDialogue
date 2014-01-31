@@ -10,6 +10,8 @@
 
 @interface BGDialogueCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *dialogueLabel;
+
 @property (nonatomic, retain) IBOutlet BGDialogueCollectionViewCell *view;
 
 + (id)presentInWindow:(UIWindow *)window;

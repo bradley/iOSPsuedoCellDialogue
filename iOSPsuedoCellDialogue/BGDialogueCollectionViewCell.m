@@ -45,7 +45,8 @@
 	rect = CGRectMake(0, window.frame.size.height, window.frame.size.width, dv.view.frame.size.height);
 	// TODO: Refactor. Why can't we just update the frame for the current dv here??
 	dv = [[BGDialogueCollectionViewCell alloc] initWithFrame:rect];
-	
+
+	dv.view.dialogueLabel.text = @"testing";
 	[window addSubview:dv];
 	
 	[UIView animateWithDuration:0.3 animations:^{
@@ -55,6 +56,11 @@
 	}];
 	
 	return dv;
+}
+
+- (void)setDialogueLabelText:(NSString *)string {
+	// NOTE: Should you need to affect any outlets, you must do so through the view.
+	// Example: _view.dialogueLabel.text = string;
 }
 
 - (void)dismiss {

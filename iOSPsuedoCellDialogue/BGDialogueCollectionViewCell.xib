@@ -25,6 +25,9 @@
             </view>
             <color key="backgroundColor" red="0.31048107454513774" green="1" blue="0.54746684192795358" alpha="1" colorSpace="calibratedRGB"/>
             <size key="customSize" width="320" height="60"/>
+            <connections>
+                <outlet property="dialogueLabel" destination="Fkh-vY-QHn" id="gs6-n2-ux4"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>
