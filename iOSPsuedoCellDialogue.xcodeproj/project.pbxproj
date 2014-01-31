@@ -21,8 +21,9 @@
 		ADF00EF3189892A500BD1017 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF00ED5189892A500BD1017 /* UIKit.framework */; };
 		ADF00EFB189892A500BD1017 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADF00EF9189892A500BD1017 /* InfoPlist.strings */; };
 		ADF00EFD189892A500BD1017 /* iOSPsuedoCellDialogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF00EFC189892A500BD1017 /* iOSPsuedoCellDialogueTests.m */; };
-		ADF00F0718989A0F00BD1017 /* BGDialogueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF00F0618989A0F00BD1017 /* BGDialogueView.xib */; };
-		ADF00F0A18989A4700BD1017 /* BGDialogueView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF00F0918989A4700BD1017 /* BGDialogueView.m */; };
+		ADF00F10189A227100BD1017 /* BGDialogueCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF00F0F189A227100BD1017 /* BGDialogueCollectionViewCell.m */; };
+		ADF00F14189B5FB300BD1017 /* BGDialogueCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF00F13189B5FB300BD1017 /* BGDialogueCollectionViewCell.xib */; };
+		ADF00F17189B7BAE00BD1017 /* BGDialogueCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF00F16189B7BAD00BD1017 /* BGDialogueCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +56,11 @@
 		ADF00EF8189892A500BD1017 /* iOSPsuedoCellDialogueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSPsuedoCellDialogueTests-Info.plist"; sourceTree = "<group>"; };
 		ADF00EFA189892A500BD1017 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ADF00EFC189892A500BD1017 /* iOSPsuedoCellDialogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSPsuedoCellDialogueTests.m; sourceTree = "<group>"; };
-		ADF00F0618989A0F00BD1017 /* BGDialogueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGDialogueView.xib; sourceTree = "<group>"; };
-		ADF00F0818989A4700BD1017 /* BGDialogueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDialogueView.h; sourceTree = "<group>"; };
-		ADF00F0918989A4700BD1017 /* BGDialogueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDialogueView.m; sourceTree = "<group>"; };
+		ADF00F0E189A227100BD1017 /* BGDialogueCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDialogueCollectionViewCell.h; sourceTree = "<group>"; };
+		ADF00F0F189A227100BD1017 /* BGDialogueCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDialogueCollectionViewCell.m; sourceTree = "<group>"; };
+		ADF00F13189B5FB300BD1017 /* BGDialogueCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGDialogueCollectionViewCell.xib; sourceTree = "<group>"; };
+		ADF00F15189B7BAD00BD1017 /* BGDialogueCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDialogueCollectionViewController.h; sourceTree = "<group>"; };
+		ADF00F16189B7BAD00BD1017 /* BGDialogueCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDialogueCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,14 +122,16 @@
 			children = (
 				ADF00EE0189892A500BD1017 /* BGAppDelegate.h */,
 				ADF00EE1189892A500BD1017 /* BGAppDelegate.m */,
-				ADF00EE3189892A500BD1017 /* Main.storyboard */,
-				ADF00F0818989A4700BD1017 /* BGDialogueView.h */,
-				ADF00F0918989A4700BD1017 /* BGDialogueView.m */,
 				ADF00EE6189892A500BD1017 /* BGViewController.h */,
 				ADF00EE7189892A500BD1017 /* BGViewController.m */,
+				ADF00F15189B7BAD00BD1017 /* BGDialogueCollectionViewController.h */,
+				ADF00F16189B7BAD00BD1017 /* BGDialogueCollectionViewController.m */,
+				ADF00F0E189A227100BD1017 /* BGDialogueCollectionViewCell.h */,
+				ADF00F0F189A227100BD1017 /* BGDialogueCollectionViewCell.m */,
+				ADF00F13189B5FB300BD1017 /* BGDialogueCollectionViewCell.xib */,
+				ADF00EE3189892A500BD1017 /* Main.storyboard */,
 				ADF00EE9189892A500BD1017 /* Images.xcassets */,
 				ADF00ED8189892A500BD1017 /* Supporting Files */,
-				ADF00F0618989A0F00BD1017 /* BGDialogueView.xib */,
 			);
 			path = iOSPsuedoCellDialogue;
 			sourceTree = "<group>";
@@ -238,8 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF00EEA189892A500BD1017 /* Images.xcassets in Resources */,
-				ADF00F0718989A0F00BD1017 /* BGDialogueView.xib in Resources */,
 				ADF00EDC189892A500BD1017 /* InfoPlist.strings in Resources */,
+				ADF00F14189B5FB300BD1017 /* BGDialogueCollectionViewCell.xib in Resources */,
 				ADF00EE5189892A500BD1017 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF00EE8189892A500BD1017 /* BGViewController.m in Sources */,
-				ADF00F0A18989A4700BD1017 /* BGDialogueView.m in Sources */,
 				ADF00EDE189892A500BD1017 /* main.m in Sources */,
+				ADF00F17189B7BAE00BD1017 /* BGDialogueCollectionViewController.m in Sources */,
+				ADF00F10189A227100BD1017 /* BGDialogueCollectionViewCell.m in Sources */,
 				ADF00EE2189892A500BD1017 /* BGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

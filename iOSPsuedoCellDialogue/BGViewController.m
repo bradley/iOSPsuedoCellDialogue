@@ -7,18 +7,18 @@
 //
 
 #import "BGViewController.h"
-#import "BGDialogueView.h"
+#import "BGDialogueCollectionViewCell.h"
 
 @implementation BGViewController
 
 - (IBAction)sayHello:(id)sender {
 	_sayHelloButton.enabled = NO;
-	BGDialogueView *dialogueView = [BGDialogueView presentInWindow:self.view.window];
+	BGDialogueCollectionViewCell *dialogueView = [BGDialogueCollectionViewCell presentInWindow:self.view.window];
 	
 	[self performSelector:@selector(dismissDialogue:) withObject:dialogueView afterDelay:2];
 }
 
-- (void)dismissDialogue:(BGDialogueView *)dialogue {
+- (void)dismissDialogue:(BGDialogueCollectionViewCell *)dialogue {
 	_sayHelloButton.enabled = YES;
 	[dialogue dismiss];
 }
